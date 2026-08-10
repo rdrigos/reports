@@ -1,0 +1,10 @@
+{
+  "name": "@config/prettier",
+  "description": "Shared Prettier configuration",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.mjs",
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}

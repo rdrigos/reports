@@ -12,6 +12,12 @@ importers:
         specifier: 2.10.8
         version: 2.10.8
 
+  config/prettier:
+    devDependencies:
+      prettier:
+        specifier: 3.9.6
+        version: 3.9.6
+
 packages:
 
   '@turbo/darwin-64@2.10.8':
@@ -44,6 +50,11 @@ packages:
     cpu: [arm64]
     os: [win32]
 
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   turbo@2.10.8:
     resolution: {integrity: sha512-9+8YX5QOkGXzZxcIykTHgaooRHGMWO+jfdyRK0o+rN0U7hBIig2MrJ8r/aNzIPDPhdA73SGb0O+tIztaModTMg==}
     hasBin: true
@@ -67,6 +78,8 @@ snapshots:
 
   '@turbo/windows-arm64@2.10.8':
     optional: true
+
+  prettier@3.9.6: {}
 
   turbo@2.10.8:
     optionalDependencies:
