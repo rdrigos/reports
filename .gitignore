@@ -1,0 +1,12 @@
+# Compiled output
+.turbo
+dist
+node_modules
+
+# IDEs and editors
+.idea
+.idx
+.vscode
+
+# Environment variable files
+.env

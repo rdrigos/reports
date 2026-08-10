@@ -1,0 +1,14 @@
+{
+  "name": "reports",
+  "description": "",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev --ui tui",
+    "format": "turbo format",
+    "lint": "turbo lint"
+  },
+  "packageManager": "pnpm@11.5.2",
+  "devDependencies": {
+    "turbo": "2.10.8"
+  }
+}
