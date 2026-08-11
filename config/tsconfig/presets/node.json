@@ -1,17 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "strict": true,
-    "lib": ["ES2022"],
+    "lib": ["ES2023"],
     "target": "ES2023",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "moduleDetection": "force",
+    "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictBindCallApply": false,
+    "verbatimModuleSyntax": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
