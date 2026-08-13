@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "exports": {
-    "./node": "./presets/node.json"
+    "./node": "./presets/node.json",
+    "./react": "./presets/react.json"
   }
 }
