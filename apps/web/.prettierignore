@@ -1,0 +1,5 @@
+**/.tanstack
+**/.turbo
+**/dist
+**/node_modules
+route-tree.gen.ts
