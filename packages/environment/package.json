@@ -1,0 +1,27 @@
+{
+  "name": "@reporting/environment",
+  "description": "Environment Setup and Validation",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "format": "prettier . --write",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@config/eslint": "workspace:*",
+    "@config/prettier": "workspace:*",
+    "@config/tsconfig": "workspace:*",
+    "@types/node": "26.2.0",
+    "eslint": "10.8.1",
+    "prettier": "3.9.6",
+    "typescript": "6.0.3"
+  }
+}

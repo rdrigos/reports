@@ -6,4 +6,7 @@ export default defineConfig({
   platform: 'node',
   clean: true,
   treeshake: true,
+  deps: {
+    alwaysBundle: ['@reporting/environment/server'],
+  },
 });

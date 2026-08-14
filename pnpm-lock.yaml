@@ -14,6 +14,9 @@ importers:
 
   apps/api:
     dependencies:
+      '@reporting/environment':
+        specifier: workspace:*
+        version: link:../../packages/environment
       fastify:
         specifier: 5.11.3
         version: 5.11.3
@@ -30,6 +33,9 @@ importers:
       '@types/node':
         specifier: 26.2.0
         version: 26.2.0
+      dotenv-cli:
+        specifier: 11.0.0
+        version: 11.0.0
       eslint:
         specifier: 10.8.1
         version: 10.8.1(jiti@2.7.0)
@@ -51,6 +57,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@reporting/environment':
+        specifier: workspace:*
+        version: link:../../packages/environment
       '@tanstack/react-router':
         specifier: 1.170.25
         version: 1.170.25(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -88,6 +97,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: 6.0.5
         version: 6.0.5(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.12))
+      dotenv-cli:
+        specifier: 11.0.0
+        version: 11.0.0
       eslint:
         specifier: 10.8.1
         version: 10.8.1(jiti@2.7.0)
@@ -153,6 +165,34 @@ importers:
         version: 3.9.6
 
   config/tsconfig: {}
+
+  packages/environment:
+    dependencies:
+      zod:
+        specifier: 4.4.3
+        version: 4.4.3
+    devDependencies:
+      '@config/eslint':
+        specifier: workspace:*
+        version: link:../../config/eslint
+      '@config/prettier':
+        specifier: workspace:*
+        version: link:../../config/prettier
+      '@config/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@types/node':
+        specifier: 26.2.0
+        version: 26.2.0
+      eslint:
+        specifier: 10.8.1
+        version: 10.8.1(jiti@2.7.0)
+      prettier:
+        specifier: 3.9.6
+        version: 3.9.6
+      typescript:
+        specifier: 6.0.3
+        version: 6.0.3
 
 packages:
 
@@ -1106,8 +1146,24 @@ packages:
     resolution: {integrity: sha512-DPi0FmjiSU5EvQV0++GFDOJ9ASQUVFh5kD+OzOnYdi7n3Wpm9hWWGfB/O2blfHcMVTL5WkQXSnRiK9makhrcnw==}
     engines: {node: '>=0.3.1'}
 
+  dotenv-cli@11.0.0:
+    resolution: {integrity: sha512-r5pA8idbk7GFWuHEU7trSTflWcdBpQEK+Aw17UrSHjS6CReuhrrPcyC3zcQBPQvhArRHnBo/h6eLH1fkCvNlww==}
+    hasBin: true
+
+  dotenv-expand@12.0.3:
+    resolution: {integrity: sha512-uc47g4b+4k/M/SeaW1y4OApx+mtLWl92l5LMPP0GNXctZqELk+YGgOPIIC5elYmUH4OuoK3JLhuRUYegeySiFA==}
+    engines: {node: '>=12'}
+
   dotenv@16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
+    engines: {node: '>=12'}
+
+  dotenv@17.4.2:
+    resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
 
   dts-resolver@3.0.0:
@@ -2879,7 +2935,22 @@ snapshots:
 
   diff@8.0.4: {}
 
+  dotenv-cli@11.0.0:
+    dependencies:
+      cross-spawn: 7.0.6
+      dotenv: 17.4.2
+      dotenv-expand: 12.0.3
+      minimist: 1.2.8
+
+  dotenv-expand@12.0.3:
+    dependencies:
+      dotenv: 16.6.1
+
   dotenv@16.0.3: {}
+
+  dotenv@16.6.1: {}
+
+  dotenv@17.4.2: {}
 
   dts-resolver@3.0.0: {}
 

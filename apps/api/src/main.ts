@@ -1,3 +1,4 @@
+import { env } from '@reporting/environment/server';
 import Fastify from 'fastify';
 
 const app = Fastify({
@@ -5,6 +6,6 @@ const app = Fastify({
 });
 
 app.listen({
-  host: '0.0.0.0',
-  port: 3000,
+  host: env.HOST,
+  port: env.PORT,
 });

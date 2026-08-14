@@ -3,14 +3,17 @@
   "compilerOptions": {
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "target": "ES2023",
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "strict": true,
     "noEmit": true,
     "skipLibCheck": true,
-    "useDefineForClassFields": true,
-    "noFallthroughCasesInSwitch": true
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
